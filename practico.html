@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Práctico: Creación de una Aplicación en ADALO</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="caso.css">
+</head>
+<body>
+    <div class="book">
+        <div class="page-container">
+            <!-- Portada del Caso Práctico -->
+            <div class="page cover" id="cover">
+                <div class="cover-content">
+                    <h1>Caso Práctico: Creación de una Aplicación en ADALO</h1>
+                    <div class="logo-container">
+                        <img src="petroperu.png" alt="Logo ADALO" class="logo">
+                    </div>
+                    <p class="subtitle">Aplicación de Fidelización de Clientes</p>
+                    <p class="description">Una guía paso a paso para crear una aplicación móvil profesional</p>
+                </div>
+            </div>
+
+            <!-- Página de Introducción -->
+            <div class="page content-page" data-color="intro">
+                <div class="content-wrapper">
+                    <h2>Introducción al Caso Práctico</h2>
+                    <div class="content-section">
+                        <h3>¿Qué es ADALO?</h3>
+                        <p>ADALO es una plataforma no-code líder que permite crear aplicaciones móviles profesionales sin necesidad de programación. Sus características principales incluyen:</p>
+                        <ul>
+                            <li>Interfaz intuitiva de arrastrar y soltar</li>
+                            <li>Componentes prediseñados profesionales</li>
+                            <li>Gestión de bases de datos integrada</li>
+                            <li>Publicación directa en App Store y Google Play</li>
+                        </ul>
+                        
+                        <h3>Objetivo del Proyecto</h3>
+                        <p>En este caso práctico, crearemos una aplicación de fidelización de clientes que incluirá:</p>
+                        <ul>
+                            <li>Sistema de autenticación seguro</li>
+                            <li>Gestión de perfiles de usuarios</li>
+                            <li>Sistema de puntos y recompensas</li>
+                            <li>Panel de administración</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Página de Inicio de Sesión -->
+            <div class="page content-page" data-color="login">
+                <div class="content-wrapper">
+                    <h2>Pantalla de Inicio de Sesión</h2>
+                    <div class="content-section">
+                        <h3>Pasos para crear la pantalla de inicio de sesión:</h3>
+                        <ol>
+                            <li>En el panel izquierdo, haz clic en "Añadir nueva pantalla".</li>
+                            <li>Selecciona "Pantalla en blanco".</li>
+                            <li>Nombra la pantalla como "Inicio de Sesión".</li>
+                            <li>Arrastra un componente "Campo de texto" para el correo electrónico.</li>
+                            <li>Arrastra otro "Campo de texto" para la contraseña y configúralo como tipo "contraseña".</li>
+                            <li>Añade un botón "Ingresar".</li>
+                            <li>Añade un enlace "Registrarse" que llevará a la pantalla de registro.</li>
+                        </ol>
+                        
+                        <h3>Configuraciones Importantes</h3>
+                        <ul>
+                            <li>Establece la validación de correo electrónico</li>
+                            <li>Configura el requisito de contraseña mínima (8 caracteres)</li>
+                            <li>Implementa mensajes de error personalizados</li>
+                            <li>Añade la opción "Recordar sesión"</li>
+                        </ul>
+                        
+                        <div class="image-container">
+                            <img src="cap1.jpg" alt="Pantalla de inicio de sesión" class="content-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Página de Registro -->
+            <div class="page content-page" data-color="register">
+                <div class="content-wrapper">
+                    <h2>Pantalla de Registro</h2>
+                    <div class="content-section">
+                        <h3>Pasos para crear la pantalla de registro:</h3>
+                        <ol>
+                            <li>Añade una nueva pantalla y nómbrala "Registro".</li>
+                            <li>Añade campos de texto para: Nombre, Apellido, Correo electrónico, Contraseña y Confirmar contraseña.</li>
+                            <li>Añade un botón "Registrarse".</li>
+                            <li>Añade un enlace para volver a la pantalla de inicio de sesión.</li>
+                        </ol>
+
+                        <h3>Validaciones del Formulario</h3>
+                        <ul>
+                            <li>Verifica que los campos no estén vacíos</li>
+                            <li>Valida el formato del correo electrónico</li>
+                            <li>Comprueba que las contraseñas coincidan</li>
+                            <li>Implementa políticas de contraseña segura</li>
+                        </ul>
+                        
+                        <div class="image-container">
+                            <img src="cap2.jpg" alt="Pantalla de registro" class="content-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Página de Tarjeta de Fidelización -->
+            <div class="page content-page" data-color="loyalty">
+                <div class="content-wrapper">
+                    <h2>Pantalla de Tarjeta de Fidelización</h2>
+                    <div class="content-section">
+                        <h3>Pasos para crear la pantalla de tarjeta de fidelización:</h3>
+                        <ol>
+                            <li>Añade una nueva pantalla y nómbrala "Tarjeta de Fidelización".</li>
+                            <li>Añade un campo de búsqueda en la parte superior.</li>
+                            <li>Crea un componente de lista para mostrar las tarjetas de fidelización.</li>
+                            <li>Añade un botón "Agregar Nueva Tarjeta" que llevará a un formulario de registro de nuevos clientes.</li>
+                        </ol>
+
+                        <h3>Funcionalidades Principales</h3>
+                        <ul>
+                            <li>Sistema de puntos acumulables</li>
+                            <li>Historial de transacciones</li>
+                            <li>Notificaciones de recompensas disponibles</li>
+                            <li>Código QR para identificación rápida</li>
+                        </ul>
+                        
+                        <div class="image-container">
+                            <img src="cap3.jpg" alt="Pantalla de tarjeta de fidelización" class="content-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-button" id="prev">Anterior</button>
+        <button class="nav-button" id="next">Siguiente</button>
+        <button class="nav-button" id="home">Inicio</button>
+        <button class="nav-button" id="back-to-manual">Volver al Manual</button>
+    </div>
+
+    <audio id="page-flip-sound" preload="auto">
+        <source src="sonido.mpeg" type="audio/mpeg">
+    </audio>
+    <script src="caso.js"></script>
+</body>
+</html>
